@@ -1,0 +1,407 @@
+{
+    "data": {
+      "domain": "hyatt.com",
+      "disposable": false,
+      "webmail": false,
+      "accept_all": false,
+      "pattern": "{first}.{last}",
+      "organization": "Hyatt",
+      "description": "Hyatt is a hospitality company that offers hotel accommodation and resort services.",
+      "industry": "Hospitality",
+      "twitter": null,
+      "facebook": null,
+      "linkedin": "https://linkedin.com/company/hyatt",
+      "instagram": null,
+      "youtube": null,
+      "technologies": [
+        "adobe-analytics",
+        "adobe-experience-manager",
+        "adobe-target",
+        "ahrefs",
+        "amazon-web-services",
+        "angular-js",
+        "ansible",
+        "apache",
+        "apigee",
+        "artifactory",
+        "aws-cloudformation",
+        "aws-lambda",
+        "bash",
+        "bitbucket",
+        "bootstrap",
+        "c",
+        "cassandra",
+        "chai",
+        "chef",
+        "cypress",
+        "datadog",
+        "delphi",
+        "django",
+        "docker",
+        "dreamweaver",
+        "elasticsearch",
+        "facebook",
+        "flask",
+        "git",
+        "gitlab",
+        "go",
+        "google-analytics",
+        "google-cloud-platform",
+        "graphql",
+        "j2ee",
+        "java",
+        "javascript",
+        "jenkins",
+        "jest",
+        "jquery",
+        "kafka",
+        "karma",
+        "kotlin",
+        "kubernetes",
+        "lightning",
+        "medallia",
+        "microsoft",
+        "microsoft-365",
+        "microsoft-azure",
+        "microsoft-excel",
+        "microsoft-office",
+        "microsoft-powerpoint",
+        "microsoft-sharepoint",
+        "microsoft-sql-server",
+        "microsoft-windows",
+        "microsoft-word",
+        "mocha",
+        "mongodb",
+        "mysql",
+        "new-relic",
+        "next-js",
+        "nginx",
+        "node-js",
+        "nosql",
+        "objective-c",
+        "oracle",
+        "pdf-js",
+        "perl",
+        "pinterest",
+        "pl-sql",
+        "postgresql",
+        "pyspark",
+        "python",
+        "react-js",
+        "redis",
+        "ruby",
+        "salesforce",
+        "sap",
+        "scala",
+        "solr",
+        "spark",
+        "splunk",
+        "spring",
+        "sql",
+        "sql-server",
+        "tealium",
+        "terraform",
+        "twitter",
+        "typescript",
+        "unix",
+        "vmware",
+        "vue-js",
+        "webpack",
+        "windows",
+        "windows-server",
+        "youtube"
+      ],
+      "country": "US",
+      "state": "IL",
+      "city": "Chicago",
+      "postal_code": null,
+      "street": null,
+      "headcount": "10001+",
+      "company_type": "public company",
+      "emails": [
+        {
+          "value": "natalie.baumhover@hyatt.com",
+          "type": "personal",
+          "confidence": 99,
+          "sources": [
+            {
+              "domain": "linkedin.com",
+              "uri": "https://www.google.com/search?q=site:linkedin.com%20natalie%20baumhover%20hyatt",
+              "extracted_on": "2025-02-20",
+              "last_seen_on": "2025-02-20",
+              "still_on_page": true
+            }
+          ],
+          "first_name": "Natalie",
+          "last_name": "Baumhover",
+          "position": "Director of Guest Services",
+          "position_raw": "Director, Guest Services, Hyatt Global Contact Center",
+          "seniority": "executive",
+          "department": "management",
+          "linkedin": "https://www.linkedin.com/in/natalie-baumhover-41380826",
+          "twitter": null,
+          "phone_number": null,
+          "verification": {
+            "date": "2025-04-23",
+            "status": "valid"
+          }
+        },
+        {
+          "value": "suman.paul@hyatt.com",
+          "type": "personal",
+          "confidence": 99,
+          "sources": [
+            {
+              "domain": "linkedin.com",
+              "uri": "https://www.google.com/search?q=site:linkedin.com%20suman%20paul%20hyatt",
+              "extracted_on": "2025-02-17",
+              "last_seen_on": "2025-06-04",
+              "still_on_page": true
+            }
+          ],
+          "first_name": "Suman",
+          "last_name": "Paul",
+          "position": "Director of Food and Beverage",
+          "position_raw": "Director of Food And Beverage",
+          "seniority": "executive",
+          "department": "management",
+          "linkedin": "https://www.linkedin.com/in/suman-paul-b6a856b1",
+          "twitter": null,
+          "phone_number": null,
+          "verification": {
+            "date": "2025-05-02",
+            "status": "valid"
+          }
+        },
+        {
+          "value": "alyssa.du@hyatt.com",
+          "type": "personal",
+          "confidence": 99,
+          "sources": [
+            {
+              "domain": "linkedin.com",
+              "uri": "https://www.google.com/search?q=site:linkedin.com%20alyssa%20du%20hyatt",
+              "extracted_on": "2025-02-14",
+              "last_seen_on": "2025-05-24",
+              "still_on_page": true
+            }
+          ],
+          "first_name": "Alyssa",
+          "last_name": "Du",
+          "position": "Global Sales Director",
+          "position_raw": "Sr. Global Sales Director - Luxury, Lifestyle & Leisure",
+          "seniority": "executive",
+          "department": "sales",
+          "linkedin": "https://www.linkedin.com/in/alyssa-du-193ba1b6",
+          "twitter": null,
+          "phone_number": null,
+          "verification": {
+            "date": "2025-05-25",
+            "status": "valid"
+          }
+        },
+        {
+          "value": "anne-marie.sabatier@hyatt.com",
+          "type": "personal",
+          "confidence": 99,
+          "sources": [
+            {
+              "domain": "linkedin.com",
+              "uri": "https://www.google.com/search?q=site:linkedin.com%20anne-marie%20sabatier%20hyatt",
+              "extracted_on": "2025-02-13",
+              "last_seen_on": "2025-06-02",
+              "still_on_page": true
+            }
+          ],
+          "first_name": "Anne-Marie",
+          "last_name": "Sabatier",
+          "position": "Director of Interior Design",
+          "position_raw": "Director of Interior Design",
+          "seniority": "executive",
+          "department": "design",
+          "linkedin": "https://www.linkedin.com/in/hatdesign",
+          "twitter": null,
+          "phone_number": null,
+          "verification": {
+            "date": "2025-05-25",
+            "status": "valid"
+          }
+        },
+        {
+          "value": "katie.johnson@hyatt.com",
+          "type": "personal",
+          "confidence": 99,
+          "sources": [
+            {
+              "domain": "linkedin.com",
+              "uri": "https://www.google.com/search?q=site:linkedin.com%20katie%20johnson%20hyatt",
+              "extracted_on": "2025-02-08",
+              "last_seen_on": "2025-05-23",
+              "still_on_page": true
+            }
+          ],
+          "first_name": "Katie",
+          "last_name": "Johnson",
+          "position": "Vice President of Brand Management",
+          "position_raw": "Vice President & Global Brand Leader, Luxury & Collection Brands",
+          "seniority": "executive",
+          "department": "management",
+          "linkedin": "https://www.linkedin.com/in/katiejohnson34",
+          "twitter": null,
+          "phone_number": null,
+          "verification": {
+            "date": "2025-05-02",
+            "status": "valid"
+          }
+        },
+        {
+          "value": "cassie.hooker@hyatt.com",
+          "type": "personal",
+          "confidence": 99,
+          "sources": [
+            {
+              "domain": "linkedin.com",
+              "uri": "https://www.google.com/search?q=site:linkedin.com%20cassie%20hooker%20hyatt",
+              "extracted_on": "2025-02-05",
+              "last_seen_on": "2025-05-26",
+              "still_on_page": true
+            }
+          ],
+          "first_name": "Cassie",
+          "last_name": "Hooker",
+          "position": "Director of Product Management",
+          "position_raw": "Director, Digital Product Management",
+          "seniority": "executive",
+          "department": "management",
+          "linkedin": "https://www.linkedin.com/in/cassie-hooker",
+          "twitter": null,
+          "phone_number": null,
+          "verification": {
+            "date": "2025-04-23",
+            "status": "valid"
+          }
+        },
+        {
+          "value": "nabil.chahdi@hyatt.com",
+          "type": "personal",
+          "confidence": 99,
+          "sources": [
+            {
+              "domain": "linkedin.com",
+              "uri": "https://www.google.com/search?q=site:linkedin.com%20nabil%20chahdi%20hyatt",
+              "extracted_on": "2025-02-05",
+              "last_seen_on": "2025-05-24",
+              "still_on_page": true
+            }
+          ],
+          "first_name": "Nabil",
+          "last_name": "Chahdi",
+          "position": "Director of Food and Beverage",
+          "position_raw": "Director Of Food And Beverage",
+          "seniority": "executive",
+          "department": "management",
+          "linkedin": "https://www.linkedin.com/in/nabil-chahdi-a2ab4622b",
+          "twitter": null,
+          "phone_number": null,
+          "verification": {
+            "date": "2025-05-05",
+            "status": "valid"
+          }
+        },
+        {
+          "value": "bryan.crail@hyatt.com",
+          "type": "personal",
+          "confidence": 99,
+          "sources": [
+            {
+              "domain": "linkedin.com",
+              "uri": "https://www.google.com/search?q=site:linkedin.com%20bryan%20crail%20hyatt",
+              "extracted_on": "2025-01-16",
+              "last_seen_on": "2025-06-03",
+              "still_on_page": true
+            }
+          ],
+          "first_name": "Bryan",
+          "last_name": "Crail",
+          "position": "Director of Sales",
+          "position_raw": "Director of Event Sales and Planning",
+          "seniority": "executive",
+          "department": "sales",
+          "linkedin": "https://www.linkedin.com/in/bryan-keith-crail-52715115",
+          "twitter": null,
+          "phone_number": null,
+          "verification": {
+            "date": "2025-05-01",
+            "status": "valid"
+          }
+        },
+        {
+          "value": "alex.wang@hyatt.com",
+          "type": "personal",
+          "confidence": 99,
+          "sources": [
+            {
+              "domain": "linkedin.com",
+              "uri": "https://www.google.com/search?q=site:linkedin.com%20alex%20wang%20hyatt",
+              "extracted_on": "2025-01-15",
+              "last_seen_on": "2025-05-27",
+              "still_on_page": true
+            }
+          ],
+          "first_name": "Alex",
+          "last_name": "Wang",
+          "position": "Director",
+          "position_raw": "Director",
+          "seniority": "executive",
+          "department": "management",
+          "linkedin": "https://www.linkedin.com/in/alex-wang-19bb6626",
+          "twitter": null,
+          "phone_number": null,
+          "verification": {
+            "date": "2025-05-01",
+            "status": "valid"
+          }
+        },
+        {
+          "value": "cathy.zhang@hyatt.com",
+          "type": "personal",
+          "confidence": 99,
+          "sources": [
+            {
+              "domain": "linkedin.com",
+              "uri": "https://www.google.com/search?q=site:linkedin.com%20cathy%20zhang%20hyatt",
+              "extracted_on": "2025-01-15",
+              "last_seen_on": "2025-05-21",
+              "still_on_page": true
+            }
+          ],
+          "first_name": "Cathy",
+          "last_name": "Zhang",
+          "position": "Sales and Marketing Director",
+          "position_raw": "Director of Sales and Marketing",
+          "seniority": "executive",
+          "department": "sales",
+          "linkedin": "https://www.linkedin.com/in/cathy-zhang-b7271376",
+          "twitter": null,
+          "phone_number": null,
+          "verification": {
+            "date": "2025-05-01",
+            "status": "valid"
+          }
+        }
+      ],
+      "linked_domains": []
+    },
+    "meta": {
+      "results": 5964,
+      "limit": 10,
+      "offset": 0,
+      "params": {
+        "domain": "hyatt.com",
+        "company": null,
+        "type": null,
+        "seniority": null,
+        "department": null
+      }
+    }
+  }

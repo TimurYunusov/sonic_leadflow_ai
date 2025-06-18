@@ -1,0 +1,13 @@
+fastapi
+uvicorn
+langchain
+langgraph
+openai
+pinecone-client
+supabase-py
+pydantic
+python-dotenv
+httpx
+requests
+aiohttp
+tiktoken 
