@@ -11,3 +11,4 @@ httpx
 requests
 aiohttp
 tiktoken 
+bs4

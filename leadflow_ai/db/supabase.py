@@ -21,4 +21,8 @@ async def fetch_all_businesses(supabase: Client) -> List[dict]:
 
 async def update_interaction_status(supabase: Client, interaction_id: int, new_status: str) -> dict:
     response = await supabase.table('interactions').update({'status': new_status}).eq('id', interaction_id).execute()
+    return response.data
+
+async def insert_local_target(supabase: Client, target_data: dict) -> dict:
+    response = await supabase.table('local_targets').insert(target_data).execute()
     return response.data 
