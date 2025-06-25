@@ -12,3 +12,5 @@ requests
 aiohttp
 tiktoken 
 bs4
+playwright
+langchain_community

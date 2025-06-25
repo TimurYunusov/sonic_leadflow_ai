@@ -11,3 +11,5 @@ app.include_router(lead_router)
 @app.get("/")
 async def root():
     return {"message": "Welcome to the LeadFlow API"} 
+
+#   uvicorn leadflow_ai.api.main:app --reload

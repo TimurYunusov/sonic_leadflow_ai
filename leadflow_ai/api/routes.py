@@ -2,7 +2,7 @@ from fastapi import APIRouter, HTTPException
 from pydantic import BaseModel
 from ..services.hunter import get_contacts
 from ..db.supabase import create_supabase, insert_lead, insert_local_target
-from ..services.enrichment import enrich_target_duckduckgo
+from ..services.enrichment import enrich_target
 import asyncio
 import aiohttp
 import os
@@ -60,6 +60,7 @@ async def discover_location(request: DiscoverRequest):
       node[\"amenity\"=\"coworking_space\"](around:{radius_m},{lat},{lon});
       way[\"building\"=\"apartments\"](around:{radius_m},{lat},{lon});
       way[\"amenity\"=\"coworking_space\"](around:{radius_m},{lat},{lon});
+      way[\"hotel\"=\"hotel\"](around:{radius_m},{lat},{lon});
     );
     out center;
     """
@@ -89,19 +90,28 @@ async def discover_location(request: DiscoverRequest):
             # Log the target before enrichment
             logging.info(f"Enriching target: {target}")
             try:
-                # Enrich target with DuckDuckGo
-                await enrich_target_duckduckgo(target)
+                # Enrich target and get enriched data
+                enriched_target = await enrich_target(target)
             except Exception as e:
-                logging.error(f"Error during enrichment: {e}", exc_info=True)
-            results.append(target)
+                logging.warning(f"Enrichment failed, using fallback address: {e}")
+                enriched_target = target  # fallback to original
 
-    # Step 4: Save each result into local_targets table in Supabase
-    supabase = await create_supabase()
-    for result in results:
-        # Create a unique hash for name + lat/lng
-        unique_hash = hash((result['name'], result['lat'], result['lng']))
-        # Check for duplicates and insert
-        await insert_local_target(supabase, {"name": result['name'], "address": result['address'], "lat": result['lat'], "lng": result['lng'], "type": result['type'], "source": result['source'], "unique_hash": unique_hash})
+            # Log enriched data before insert
+            logging.info(f"Inserting enriched target: {enriched_target}")
+
+            # Insert enriched data into Supabase
+            supabase = await create_supabase()
+            await insert_local_target(supabase, {
+                "name": enriched_target['name'],
+                "address": enriched_target['address'],
+                "lat": enriched_target['lat'],
+                "lng": enriched_target['lng'],
+                "type": enriched_target['type'],
+                "source": enriched_target['source'],
+                "unique_hash": hash((enriched_target['name'], enriched_target['lat'], enriched_target['lng']))
+            })
+
+            results.append(enriched_target)
 
     # Step 5: Return the results as JSON
     return results
