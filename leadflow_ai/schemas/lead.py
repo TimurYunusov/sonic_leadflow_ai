@@ -13,11 +13,19 @@ class Lead(BaseModel):
     source: Optional[str]
 
 class Business(BaseModel):
-    id: int
-    name: constr(min_length=1)
-    domain: Optional[str]
-    size: Optional[int]
-    location: Optional[str]
+    name: str
+    location: str
+    website: str
+    url: str
+    email: Optional[str] = None
+    summary: Optional[str] = None
+    pain_points: Optional[str] = None
+    outreach_email: Optional[str] = None
+
+class AppState(BaseModel):
+    search_query: str
+    businesses: Optional[List[Business]] = []
+    max_links: int
 
 class Interaction(BaseModel):
     lead_id: int
