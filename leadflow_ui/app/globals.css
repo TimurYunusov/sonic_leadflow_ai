@@ -1,0 +1,100 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 10 10% 4%;
+    --foreground: 0 0% 98%;
+    --card: 10 10% 7%;
+    --card-foreground: 0 0% 98%;
+    --popover: 10 10% 7%;
+    --popover-foreground: 0 0% 98%;
+    --primary: 0 0% 98%;
+    --primary-foreground: 10 5.9% 10%;
+    --secondary: 10 3.7% 15.9%;
+    --secondary-foreground: 0 0% 98%;
+    --muted: 10 3.7% 15.9%;
+    --muted-foreground: 10 5% 64.9%;
+    --accent: 10 3.7% 15.9%;
+    --accent-foreground: 0 0% 98%;
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 10 3.7% 15.9%;
+    --input: 10 3.7% 15.9%;
+    --ring: 10 4.9% 83.9%;
+    --radius: 0.75rem;
+  }
+
+  .dark {
+    --background: 10 10% 4%;
+    --foreground: 0 0% 98%;
+    --card: 10 10% 7%;
+    --card-foreground: 0 0% 98%;
+    --popover: 10 10% 7%;
+    --popover-foreground: 0 0% 98%;
+    --primary: 0 0% 98%;
+    --primary-foreground: 10 5.9% 10%;
+    --secondary: 10 3.7% 15.9%;
+    --secondary-foreground: 0 0% 98%;
+    --muted: 10 3.7% 15.9%;
+    --muted-foreground: 10 5% 64.9%;
+    --accent: 10 3.7% 15.9%;
+    --accent-foreground: 0 0% 98%;
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 10 3.7% 15.9%;
+    --input: 10 3.7% 15.9%;
+    --ring: 10 4.9% 83.9%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-gray-800;
+  }
+  body {
+    @apply bg-dark-bg text-white;
+  }
+}
+
+/* Force dark theme styles */
+html.dark {
+  color-scheme: dark;
+}
+
+html.dark body {
+  background-color: #0a0a0b !important;
+  color: #ffffff !important;
+}
+
+/* Custom scrollbar for dark theme */
+.dark-scrollbar::-webkit-scrollbar {
+  width: 6px;
+}
+
+.dark-scrollbar::-webkit-scrollbar-track {
+  background: #111113;
+}
+
+.dark-scrollbar::-webkit-scrollbar-thumb {
+  background: #1f1f23;
+  border-radius: 3px;
+}
+
+.dark-scrollbar::-webkit-scrollbar-thumb:hover {
+  background: #2a2a2e;
+}
+
+/* Glow effects */
+.glow-blue {
+  box-shadow: 0 0 20px rgba(0, 212, 255, 0.3);
+}
+
+.glow-violet {
+  box-shadow: 0 0 20px rgba(139, 92, 246, 0.3);
+}
+
+.glow-green {
+  box-shadow: 0 0 20px rgba(16, 185, 129, 0.3);
+}

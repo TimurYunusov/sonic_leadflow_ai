@@ -97,3 +97,15 @@ celerybeat-schedule
 
 # Cython debug symbols
 cython_debug/
+
+# Next.js/React frontend (leadflow_ui)
+leadflow_ui/node_modules/
+leadflow_ui/.next/
+leadflow_ui/out/
+leadflow_ui/.env.local
+leadflow_ui/.env.development.local
+leadflow_ui/.env.test.local
+leadflow_ui/.env.production.local
+leadflow_ui/.turbo/
+leadflow_ui/.vercel/
+leadflow_ui/.pnpm-store/

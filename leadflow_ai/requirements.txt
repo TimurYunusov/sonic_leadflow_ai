@@ -14,3 +14,5 @@ tiktoken
 bs4
 playwright
 langchain_community
+streamlit
+pandas

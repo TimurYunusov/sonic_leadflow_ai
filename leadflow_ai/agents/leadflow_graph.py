@@ -1,7 +1,7 @@
 from langgraph import Graph, Node
-from services.hunter import get_contacts
-from db.pinecone import embed_interests, upsert_lead, search_businesses
-from db.supabase import fetch_all_businesses
+from leadflow_ai.services.hunter import get_contacts
+from leadflow_ai.db.pinecone import embed_interests, upsert_lead, search_businesses
+from leadflow_ai.db.supabase import fetch_all_businesses
 from langchain import OpenAI
 import os
 
