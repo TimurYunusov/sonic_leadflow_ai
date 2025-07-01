@@ -1,0 +1,16 @@
+version: "3.8"
+services:
+  backend:
+    build: ./leadflow_ai
+    ports:
+      - "8000:8000"
+    volumes:
+      - ./leadflow_ai:/app
+  frontend:
+    build: ./leadflow_ui
+    ports:
+      - "3000:3000"
+    volumes:
+      - ./leadflow_ui:/app
+    depends_on:
+      - backend
